@@ -7,7 +7,7 @@ public class Soru2 {
         Scanner giris = new Scanner(System.in);
         Random rnd = new Random();
 
-        System.out.println("Kaç Kolon Oynayacaksınız?(1/8):");
+        System.out.println("KaÃ§ Kolon OynayacaksÄ±nÄ±z?(1/8):");
         int kolonsayisi = giris.nextInt();
         
         int[] butunrakamlar = new int[kolonsayisi * 6];
