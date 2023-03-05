@@ -22,7 +22,7 @@ public class Soru2 {
 				System.out.println("Tebrikler bildiniz.");
 			}
 			else {
-				System.out.println("Üzgünüm bilemediniz.");
+				System.out.println("ÃœzgÃ¼nÃ¼m bilemediniz.");
 			}
 			
 			System.out.print("Tekrar oynamak istiyor musunuz(e/E)? ");
