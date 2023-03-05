@@ -7,7 +7,7 @@ public class Not {
 
 
 	    public static int rastgeleNumaraUret() {
-	        int lotoNumber = 1 + (int) (Math.random() * 49); // 1 ile 49 arasý rastgele sayý üretimi
+	        int lotoNumber = 1 + (int) (Math.random() * 49); // 1 ile 49 arasÄ± rastgele sayÄ± Ã¼retimi
 	        
 	        return lotoNumber;
 	    }
@@ -30,10 +30,10 @@ public class Not {
 	                            break;
 	                        }
 	                    }
-	                    if (j == 6) { // bir üstteki for döngüsünde tüm elemanlarý kontrol ettiðinden emin olduk
+	                    if (j == 6) { // bir Ã¼stteki for dÃ¶ngÃ¼sÃ¼nde tÃ¼m elemanlarÄ± kontrol ettiÄŸinden emin olduk
 	                        /*
-	                        eðer ayný rakamlar üretilmiþse, j 6'ya eþit olmadan bir üstteki for döngüsünden çýkýlmýþ demektir
-	                        bu yüzden ayniSayibuldu true olmayacaktýr ve i=0 için while döngüsü bir kez daha çalýþacaktýr.
+	                        eÄŸer aynÄ± rakamlar Ã¼retilmiÅŸse, j 6'ya eÅŸit olmadan bir Ã¼stteki for dÃ¶ngÃ¼sÃ¼nden Ã§Ä±kÄ±lmÄ±ÅŸ demektir
+	                        bu yÃ¼zden ayniSayibuldu true olmayacaktÄ±r ve i=0 iÃ§in while dÃ¶ngÃ¼sÃ¼ bir kez daha Ã§alÄ±ÅŸacaktÄ±r.
 	                        */
 	                        loto[i] = rastgeleNumber;
 	                        ayniSayibuldu = true;
@@ -41,7 +41,7 @@ public class Not {
 	                }
 	            }
 
-	            //Küçükten büyüðe sýralama iþlemimizi yapalým
+	            //KÃ¼Ã§Ã¼kten bÃ¼yÃ¼ÄŸe sÄ±ralama iÅŸlemimizi yapalÄ±m
 	            for (t = 6; t >= 1; t--) {
 	                maxloc = 0;
 	                for (p = 1; p < 6; p++) {
@@ -56,21 +56,21 @@ public class Not {
 	                }
 
 	            }
-	            System.out.println("Bu haftaki olasý sayisal loto sonuclari");
+	            System.out.println("Bu haftaki olasÄ± sayisal loto sonuclari");
 	            for (int k = 0; k < 6; k++) {
 
 	                System.out.print(loto[k] + " ");
 
 	            }
 
-	            System.out.println("Tekrar rakam almak istermisiniz (evet/hayir)?");//"hayir" yazmalýyýz,"hayýr" yazýnca doðru calýþmýyor.
+	            System.out.println("Tekrar rakam almak istermisiniz (evet/hayir)?");//"hayir" yazmalÄ±yÄ±z,"hayÄ±r" yazÄ±nca doÄŸru calÄ±ÅŸmÄ±yor.
 	            String yesOrno = giris.next();
 	            if (yesOrno.equals("evet")) {
 	                devamMi = false;
 
 	            } else if (yesOrno.equals("hayir")) {
 	                devamMi = true;
-	                System.out.println("Oyunumuz burda bitmiþtir, teþekkürler.");
+	                System.out.println("Oyunumuz burda bitmiÅŸtir, teÅŸekkÃ¼rler.");
 	            }
 	        }
 	    }
